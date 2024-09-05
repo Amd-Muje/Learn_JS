@@ -1,14 +1,25 @@
-console.log(`Hello`);
-console.log(`I Like Pizza!`);
+//let age = 20;
+//let price = 20;
+//let gpa = 3.88;
 
-window.alert(`This Is An Alert!`);
-window.alert(`i Like pizza`);
+let firstName = "Alex";
 
-document.getElementById("myH1").textContent = `Hello`;
-document.getElementById("myP").textContent = `World `;
+//booleans
+let online = true;
 
-//This is a Comment
+let fullName = "Wow keren";
+let age = "";
+let isStudent = true;
 
-/* 
-long comment
-*/
+
+console.log(typeof gpa);
+console.log(`You Are ${age} years old`);
+console.log(`The price is Rp.${prcie}K`);
+console.log(`My GPA ${gpa}`);
+console.log(`Your name is ${firstName}`);
+console.log(typeof online); // untuk lihat type datanya
+console.log(`Online ? : ${online}`);
+
+document.getElementById("p1").textContent = `your name is ${fullName}`;
+document.getElementById("p2").textContent = `you are ${age} years old`;
+document.getElementById("p3").textContent = `Enrolled: ${isStudent}`;
