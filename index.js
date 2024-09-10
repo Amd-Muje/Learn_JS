@@ -1,19 +1,21 @@
-// how to accept user input
-
-// 1. easy
-// 2. professional
-
-let username;
-
-username = window.prompt("What's your username?");
-
-console.log(username);
-
-// professional way
+// type conversion 
 
 
+let age = window.prompt("How Old are you ?");
+age = Number(age);
+age+=1;
 
-document.getElementById("mySubmit").onclick = function () {
-    username = document.getElementById("myText").value;
-    document.getElementById("myH1").textContent = `hello ${username}`;
-}
+console.log(age, typeof age);
+
+let x = "pizza";
+let y = "pizza";
+let z = "pizza";
+
+x = Number(x);
+y = String(y);
+z = Boolean(z);
+
+console.log(x, typeof x);
+console.log(y, typeof y);
+console.log(z, typeof z);
+
