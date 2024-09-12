@@ -1,4 +1,21 @@
-body {
-    font-family: Verdana;
-    font-size: 2em;
+#countLabel {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvatica;
+}
+#btnContainer {
+    text-align: center;
+}
+.buttons{
+    padding:  10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(97, 31, 252, 0.397);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+.buttons:hover {
+    background-color: rgba(24, 2, 75, 0.966);;
 }
