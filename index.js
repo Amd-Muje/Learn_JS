@@ -1,19 +1,33 @@
 // if statement
 
-let age = 25;
+const myText = document.getElementById("myText");
+const mySubmit = document.getElementById("mySubmit");
+const resultElement = document.getElementById("resultElement");
+let age = 0;
 
-if (age >= 18) {
-    console.log ("you are old enough");
-}
-else {
-    console.log ("you must 18+ to enter");
-}
+mySubmit.onclick = function() {
 
-let isStudent = true;
+    age = myText.value;
+    age = Number(age);
 
-if(isStudent) {
-    console.log("You are a student");
-}
-else {
-    console.log("You are not a student");
+    if(age >= 100){
+        resultElement.textContent = "You Are Too Old to enter this site";
+    
+    }
+    else if(age == 0){
+        resultElement.textContent = "You can't enter. you were just born";
+    
+    }
+    else if(age >= 18){
+        resultElement.textContent = "You Are Old Enough To Enter This Site";
+    
+    }
+    else if(age < 0){
+        resultElement.textContent = "Your Age can't be below 0";
+    
+    }
+    else{
+        resultElement.textContent = "You Must be 18+ to enter this site";
+    
+    }
 }
