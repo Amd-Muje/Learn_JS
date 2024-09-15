@@ -1,33 +1,33 @@
-// if statement
+// checked = property yang menentukan state dari checkbox di html
+//          atau radio button.
 
-const myText = document.getElementById("myText");
+const myCheckBox = document.getElementById("myCheckBox");
+const visaBtn = document.getElementById("visaBtn");
+const mastercardlBtn = document.getElementById("mastercardBtn");
+const paypalBtn = document.getElementById("paypalBtn");
 const mySubmit = document.getElementById("mySubmit");
-const resultElement = document.getElementById("resultElement");
-let age = 0;
+const subResult = document.getElementById("subResult");
+const paymentResult = document.getElementById("paymentResult");
 
 mySubmit.onclick = function() {
 
-    age = myText.value;
-    age = Number(age);
+    if(myCheckBox.checked){
+        subResult.textContent = `You Are Subscribed!`;
+    }
+    else {
+        subResult.textContent = `You Are NOT Subscribed! yet`;
+    }
 
-    if(age >= 100){
-        resultElement.textContent = "You Are Too Old to enter this site";
-    
+    if(visaBtn.checked){
+        paymentResult.textContent = `You Are Paying With Visa!`;
     }
-    else if(age == 0){
-        resultElement.textContent = "You can't enter. you were just born";
-    
+    else if(mastercardlBtn.checked){
+        paymentResult.textContent = `You Are Paying With MasterCard!`;
+    } 
+    else if(paypalBtn.checked) {
+        paymentResult.textContent = `you are paying with Paypal!`;''
     }
-    else if(age >= 18){
-        resultElement.textContent = "You Are Old Enough To Enter This Site";
-    
-    }
-    else if(age < 0){
-        resultElement.textContent = "Your Age can't be below 0";
-    
-    }
-    else{
-        resultElement.textContent = "You Must be 18+ to enter this site";
-    
+    else {
+        paymentResult.textContent = `you aren't select any payment type!!`
     }
 }
