@@ -1,12 +1,19 @@
-// RANDOM NUMBER GENERATOR
+// if statement
 
-const myButton = document.getElementById("myButton");
-const myLabel = document.getElementById("myLabel");
-const min = 1;
-const max = 6;
-let randomNum;
+let age = 25;
 
-myButton.onclick = function() {
-    randomNum = Math.floor(Math.random() * max) + min ;
-    myLabel.textContent = randomNum;
+if (age >= 18) {
+    console.log ("you are old enough");
+}
+else {
+    console.log ("you must 18+ to enter");
+}
+
+let isStudent = true;
+
+if(isStudent) {
+    console.log("You are a student");
+}
+else {
+    console.log("You are not a student");
 }
