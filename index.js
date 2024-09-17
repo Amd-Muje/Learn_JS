@@ -1,20 +1,30 @@
-// ternary operator = singkat dari if() else()
-//                    condisi ? IfTrue : IfFalse;
+// Switch
 
-// let age = 21;
-// let massage = age >= 18 ? "lebih dari 18" : "kurang dari 18";
+let day = 1;
 
-// console.log(message);
-
-// let time = 16;
-// let greeting = time < 12 ? "Good Morning" : "Good Afternoon";
-// console.log(greeting);
-
-// let isStudent = true;
-// let message = isStudent ? "Im Student" : "I'm not Student";
-// console.log(message);
-
-let purchaseAmount = 125;
-
-let discount = purchaseAmount >= 100 ? 10 : 0;
-console.log(`your total is $${purchaseAmount - purchaseAmount * (discount/100)}`);
+switch(day){
+    case 1:
+        console.log(`monday`);
+        break;
+    case 2:
+        console.log(`tuesday`);
+        break;
+    case 3:
+        console.log(`wednesday`);
+        break;
+    case 4:
+        console.log(`thursday`);
+        break;
+    case 5:
+        console.log(`fryday`);
+        break;
+    case 6:
+        console.log(`saturday`);
+        break;
+    case 7:
+        console.log(`sunday`);
+        break;
+    default:
+        console.log(`no day`);
+        break;
+}
