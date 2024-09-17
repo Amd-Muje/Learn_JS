@@ -1,33 +1,20 @@
-// checked = property yang menentukan state dari checkbox di html
-//          atau radio button.
+// ternary operator = singkat dari if() else()
+//                    condisi ? IfTrue : IfFalse;
 
-const myCheckBox = document.getElementById("myCheckBox");
-const visaBtn = document.getElementById("visaBtn");
-const mastercardlBtn = document.getElementById("mastercardBtn");
-const paypalBtn = document.getElementById("paypalBtn");
-const mySubmit = document.getElementById("mySubmit");
-const subResult = document.getElementById("subResult");
-const paymentResult = document.getElementById("paymentResult");
+// let age = 21;
+// let massage = age >= 18 ? "lebih dari 18" : "kurang dari 18";
 
-mySubmit.onclick = function() {
+// console.log(message);
 
-    if(myCheckBox.checked){
-        subResult.textContent = `You Are Subscribed!`;
-    }
-    else {
-        subResult.textContent = `You Are NOT Subscribed! yet`;
-    }
+// let time = 16;
+// let greeting = time < 12 ? "Good Morning" : "Good Afternoon";
+// console.log(greeting);
 
-    if(visaBtn.checked){
-        paymentResult.textContent = `You Are Paying With Visa!`;
-    }
-    else if(mastercardlBtn.checked){
-        paymentResult.textContent = `You Are Paying With MasterCard!`;
-    } 
-    else if(paypalBtn.checked) {
-        paymentResult.textContent = `you are paying with Paypal!`;''
-    }
-    else {
-        paymentResult.textContent = `you aren't select any payment type!!`
-    }
-}
+// let isStudent = true;
+// let message = isStudent ? "Im Student" : "I'm not Student";
+// console.log(message);
+
+let purchaseAmount = 125;
+
+let discount = purchaseAmount >= 100 ? 10 : 0;
+console.log(`your total is $${purchaseAmount - purchaseAmount * (discount/100)}`);
