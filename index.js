@@ -1,30 +1,20 @@
-// Switch
+// other latihan Switches
 
-let day = 1;
+let nilaiUlangan = 70;
+let nilaiHuruf;
 
-switch(day){
-    case 1:
-        console.log(`monday`);
+switch(true){
+    case nilaiUlangan >= 90:
+        nilaiHuruf = "A";
         break;
-    case 2:
-        console.log(`tuesday`);
+    case nilaiUlangan >= 80:
+        nilaiHuruf = "B";
         break;
-    case 3:
-        console.log(`wednesday`);
+    case nilaiUlangan >= 70:
+        nilaiHuruf = "C";
         break;
-    case 4:
-        console.log(`thursday`);
-        break;
-    case 5:
-        console.log(`fryday`);
-        break;
-    case 6:
-        console.log(`saturday`);
-        break;
-    case 7:
-        console.log(`sunday`);
-        break;
-    default:
-        console.log(`no day`);
-        break;
+    default :
+        console.log(`${nilaiUlangan} adalah bukan nilai`);
 }
+
+console.log(nilaiHuruf);
