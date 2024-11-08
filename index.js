@@ -1,35 +1,13 @@
-// // string methods
+const fullname = "Ahmad Mujahid";
 
-// let username = " AhmadMujahid   ";
+// let firstName = fullname.slice(0, 5);
+// let lastName = fullname.slice(6, 13);
 
-// console.log(username.charAt(2)); // melihat char apa di index tertentu
 
-// console.log(username.indexOf("A"));
+let firstName = fullname.slice(0, fullname.indexOf(" "));
+let lastName = fullname.slice(fullname.indexOf(" ") + 1);
 
-// console.log(username.length); // melihat panjang string
+console.log(firstName);
+console.log(lastName);
 
-// username = username.trim(); // untuk memotong white Space => spasi yang tidak jelas awal dan akhir
-// username = username.toUpperCase(); // 
-// username = username.toLowerCase(); // 
 
-// console.log(username);
-
-// console.log(username.repeat(3)); // untuk mengulangi string sebanyak 3 kali
-
-// let result = username.startsWith(" "); // untuk mengetahui true or false dari parameter yang diberikan
-
-// if (result) {
-//     console.log("Your Username can't begin with ' '");
-// } else {
-//     console.log(username);
-// }
-
-let phoneNumber = "0812-3456-7890"
-
-phoneNumber = phoneNumber.replaceAll("-","+");
-
-console.log(phoneNumber);
-
-phoneNumber = phoneNumber.padStart(30,"-");
-
-console.log(phoneNumber);
