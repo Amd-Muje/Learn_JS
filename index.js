@@ -1,19 +1,22 @@
-// const fullname = "Ahmad Mujahid";
-
-// // let firstName = fullname.slice(0, 5);
-// // let lastName = fullname.slice(6, 13);
+// Method Chaining
 
 
-// let firstName = fullname.slice(0, fullname.indexOf(" "));
-// let lastName = fullname.slice(fullname.indexOf(" ") + 1);
+//   ----------- NO METHOD CHAINING ---------------
 
-// console.log(firstName);
-// console.log(lastName);
+let username = window.prompt("Enter Your username");
 
-const email = "Keren@gmail.com";
+// username = username.trim();
+// let letter = username.charAt(0);
+// letter = letter.toUpperCase();
 
-let username = email.slice(0, email.indexOf("@"));
-let extension = email.slice(email.indexOf("@") + 1);
+// let extraChars = username.slice(1);
+// extraChars = extraChars.toLowerCase();
+// username = letter + extraChars;
+
+// console.log(username);
+
+//   ----------- METHOD CHAINING ---------------
+
+username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
 
 console.log(username);
-console.log(extension);
