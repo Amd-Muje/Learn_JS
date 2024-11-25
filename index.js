@@ -1,26 +1,15 @@
-// logical operators = used to determine the logic between variables or values
+let loggedIn = false;
+let username;
+let password;
 
-// && = and
-// || = or
-// ! = not
+while (!loggedIn) {
+  username = window.prompt("Masukkan Username:");
+  password = window.prompt("Masukkan Password:");
 
-const temp = 30;
-
-if(temp > 0 && temp < 30) {
-    console.log("the temperature is above freezing");
-}
-else if (temp <= 30) {
-    console.log("the temperature is good");
-}
-else {
-    console.log("the temperature is bad");
-}
-
-const isSunny = false;
-
-if(!isSunny) {
-    console.log("It's sunny outside");
-}
-else {
-    console.log("It's not sunny outside");
+  if (username === "admin123" && password === "admin123") {
+    loggedIn = true;
+    console.log("login berhasil");
+  } else {
+    console.log("Data invalid");
+  }
 }
