@@ -1,22 +1,26 @@
-// Method Chaining
+// logical operators = used to determine the logic between variables or values
 
+// && = and
+// || = or
+// ! = not
 
-//   ----------- NO METHOD CHAINING ---------------
+const temp = 30;
 
-let username = window.prompt("Enter Your username");
+if(temp > 0 && temp < 30) {
+    console.log("the temperature is above freezing");
+}
+else if (temp <= 30) {
+    console.log("the temperature is good");
+}
+else {
+    console.log("the temperature is bad");
+}
 
-// username = username.trim();
-// let letter = username.charAt(0);
-// letter = letter.toUpperCase();
+const isSunny = false;
 
-// let extraChars = username.slice(1);
-// extraChars = extraChars.toLowerCase();
-// username = letter + extraChars;
-
-// console.log(username);
-
-//   ----------- METHOD CHAINING ---------------
-
-username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
-
-console.log(username);
+if(!isSunny) {
+    console.log("It's sunny outside");
+}
+else {
+    console.log("It's not sunny outside");
+}
