@@ -1,15 +1,12 @@
-let loggedIn = false;
-let username;
-let password;
+// for loop = repeat something a number of times
 
-while (!loggedIn) {
-  username = window.prompt("Masukkan Username:");
-  password = window.prompt("Masukkan Password:");
 
-  if (username === "admin123" && password === "admin123") {
-    loggedIn = true;
-    console.log("login berhasil");
-  } else {
-    console.log("Data invalid");
-  }
+for(let i = 1; i <= 50; i++){
+    console.log(i);
+    if (i === 20){
+        break;
+    }
+    else {
+        console.log("Not yet, keep going");
+    }
 }
